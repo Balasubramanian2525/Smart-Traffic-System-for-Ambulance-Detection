@@ -1,0 +1,28 @@
+# Smart Traffic System for Ambulance Detection 🚑
+
+## 📌 Overview
+A **real-time traffic control system** that uses **image processing and machine learning** to detect ambulances and prioritize them at traffic signals.  
+This project reduces emergency response time by automatically controlling traffic lights when an ambulance is detected.  
+
+## 🛠️ Tech Stack
+- **Language:** Python  
+- **Libraries:** OpenCV, TensorFlow/Keras, NumPy  
+- **Hardware (optional for deployment):** ESP32-CAM for edge detection  
+- **Algorithm:** Custom CNN / Object Detection Model for Ambulance Recognition  
+
+## ⚙️ Workflow
+1. Traffic camera footage is captured using ESP32-CAM.  
+2. Image processing + ML model detects ambulance in frames.  
+3. If ambulance detected → traffic signal is overridden to green.  
+4. Control signal sent to traffic light controller.  
+
+## 📂 Repository
+- `src/detection.py` → Main Python script for ambulance detection  
+- `docs/` → Diagrams, architecture, and demo screenshots  
+
+## ▶️ Usage
+```bash
+git clone https://github.com/<your-username>/smart-traffic-ambulance-detection.git
+cd smart-traffic-ambulance-detection
+pip install -r requirements.txt
+python src/detection.py
